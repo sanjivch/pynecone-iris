@@ -47,12 +47,6 @@ class State(pc.State):
         
 
 
-
-
-
-# class NumberInputState(pc.State):
-#     number: float
-
 def index():
     return pc.center(
         pc.vstack(
@@ -72,6 +66,7 @@ def index():
                 "Predict",
                 on_click=[State.get_prediction],
                 width="100%",
+                color="green",
             ),
             pc.divider(),
             pc.heading(State.species, font_size="20px"),
